@@ -1,0 +1,35 @@
+{
+  "name": "cup",
+  "version": "1.0.0",
+  "description": "create uxp project",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "cup": "./bin/index.js"
+  },
+  "scripts": {
+    "dev": "node ./src/create.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "lint-staged": {
+    "*.js": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^4.3.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "download": "^8.0.0",
+    "ora": "^8.0.1"
+  }
+}
